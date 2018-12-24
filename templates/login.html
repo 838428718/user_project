@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <script src = "{% static 'js/jquery.cookie.js' %}"></script>
+    <script src="{% static 'js/login.js' %}"></script>
+</head>
+
+<body>
+<div id="web">
+<p style="height:180px;"></p>
+
+<p style="height:40px;"></p>
+<div class="login">
+   <div class="loginbg">
+   </div>
+   <div class="logmain">
+      <h1>&nbsp;</h1>
+      <div class="logdv">
+         <span class="logzi">账 号：</span>
+        <input type="text" id="account" class="ipt" />
+      </div>
+      <div class="logdv">
+      <span class="logzi">密 码：</span>
+        <input type="password" id="password" class="ipt" />
+      </div>
+      <div class="logdv">
+        <p class="logzi">&nbsp;</p>
+          <span class="tips">账户密码错误！</span>
+          <a href="#" class="more">忘记密码</a>
+      </div>
+      <div class="logdv" style="height:40px;">
+        <p class="logzi">&nbsp;</p>    
+        <input type="submit" class="btnbg" value="登录" id="submit"/>
+      </div>
+      <div>
+        <a href="#" class="more">注册</a>
+      </div>
+   </div>
+</div>
+<p style="height:100px;"></p>
+</div>
+
+</body>
+</html>

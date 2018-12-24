@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</head>
+
+<body>
+<div id="web">
+<p style="height:180px;"></p>
+<div class="userList">
+    <ul class="userShow"></ul>
+    <ul>
+
+        <li>
+            <div class="page">
+                <div>
+                    <ul class="pageList">
+                        <li class="btn" id="pageTo">确定</li>
+                        <li ><input type="text"  class="pageNumber"/></li>
+                        <li><span>前往</span></li>
+
+                        <li class="btn" id="pageDown">下一页</li>
+                        <li><span>页</span></li>
+                        <li><span id="page">1</span></li>
+                        <li><span>当前第</span></li>
+
+                        <li class="btn" id="pageUp">上一页</li>
+                        <li class="btn" style="float: left; margin-left: 10px;" id="logout">退出登陆</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+    <p style="height:100px;"></p>
+</div>
+</body>
+</html>
